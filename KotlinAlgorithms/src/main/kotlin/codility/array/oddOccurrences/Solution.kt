@@ -5,6 +5,7 @@ fun main(){
 }
 
 fun solution(input: IntArray): Int{
+
     input.groupBy { it }.forEach { (key, value) ->
         if (value.size % 2 > 0){
             return key
